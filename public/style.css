@@ -5,6 +5,7 @@
 
 body {
   background-color: #d5c4a1;
+  padding: 0 5em;
 }
 
 h1 {
@@ -19,4 +20,10 @@ nav a {
 nav a + a::before {
   content: "|";
   margin: 0 0.8em;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 0 2em;
+  }
 }
