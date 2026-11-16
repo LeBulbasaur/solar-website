@@ -22,8 +22,31 @@ nav a + a::before {
   margin: 0 0.8em;
 }
 
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+
+  background: linear-gradient(
+    to top,
+    #62bb47 0 16.66%,
+    #fcb827 16.66% 33.33%,
+    #f6821f 33.33% 50%,
+    #e03a3e 50% 66.66%,
+    #963d97 66.66% 83.33%,
+    #009ddc 83.33% 100%
+  );
+}
+
 @media (max-width: 800px) {
   body {
     padding: 0 2em;
+  }
+
+  .banner img {
+    width: 50%;
+    height: auto;
   }
 }
